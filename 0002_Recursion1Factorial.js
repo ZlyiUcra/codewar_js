@@ -12,12 +12,12 @@
 
 // You have to create the function factorial that receives n and returns n!. You have to use recursion.
 
-const factorial = n => {
-    if(n < 0){
-      throw Exception("Unexpected value in factorial's calculation!")
-    } else if (n === 1 || n === 0){
-      return 1;
+const factorial = (n) => {
+    if (n < 0) {
+        throw "Unexpected value in factorial's calculation!";
+    } else if (n === 1 || n === 0) {
+        return 1;
     } else {
-      return factorial(n-1) * n;
+        return factorial(n - 1) * n;
     }
-  };
+};
